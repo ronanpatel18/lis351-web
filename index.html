@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover South Africa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.5;
+    }
+
+    header,
+    main,
+    footer {
+      padding: 24px;
+    }
+
+    nav a {
+      margin-right: 16px;
+    }
+
+    #experiences {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    #experiences div {
+      border: 1px solid #ddd;
+      padding: 16px;
+    }
+
+    #experiences img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 600px) {
+      header,
+      main,
+      footer {
+        padding: 16px;
+      }
+
+      #experiences img {
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Discover South Africa</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#cities">Cities</a>
+        <a href="#plan">Plan Your Trip</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Adventure Awaits in South Africa</h2>
+      <p>From bush camping under star-filled skies to vibrant cities and coastal escapes.</p>
+      <a href="#plan">Get started planning your trip</a>
+    </section>
+
+    <section id="experiences">
+      <h2>Top Experiences</h2>
+      <div>
+        <img src="images/bush%20camping.jpg" alt="Bush camping tents under a starry sky">
+        <h3>Bush Camping</h3>
+        <p>Sleep close to nature in world-famous game reserves and hear the sounds of the wild.</p>
+      </div>
+      <div>
+        <img src="images/johannesburg.jpg" alt="Johannesburg city skyline and streets">
+        <h3>Johannesburg</h3>
+        <p>Explore history, art, and culture in South Africa's energetic urban heart.</p>
+      </div>
+      <div>
+        <img src="images/cape%20town.jpg" alt="Cape Town coastline with Table Mountain">
+        <h3>Cape Town</h3>
+        <p>Ride the cable car, hike Table Mountain, and enjoy beaches with dramatic views.</p>
+      </div>
+    </section>
+
+    <section id="cities">
+      <h2>Featured Content</h2>
+      <p>South Africa blends wildlife adventures with bold city life and scenic coastlines.</p>
+    </section>
+
+    <section>
+      <h2>More to Explore</h2>
+      <div>
+        <h3>Garden Route</h3>
+        <p>Drive the coastline and stop in charming towns, forests, and lagoons.</p>
+      </div>
+      <div>
+        <h3>Local Cuisine</h3>
+        <p>Try braai, biltong, and fresh seafood at markets and seaside cafés.</p>
+      </div>
+    </section>
+
+    <section id="plan">
+      <h2>Heard enough?</h2>
+      <p>Start mapping out your South African itinerary today.</p>
+      <a href="https://www.southafrica.net/us/en/">Plan your adventure in South Africa</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Discover South Africa</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#plan">Plan</a>
+    </nav>
+  </footer>
+</body>
+</html>
