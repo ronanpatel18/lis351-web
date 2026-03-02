@@ -4,125 +4,118 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Discover South Africa</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.5;
-    }
-
-    header,
-    main,
-    footer {
-      padding: 24px;
-    }
-
-    nav a {
-      margin-right: 16px;
-    }
-
-    #experiences {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    #experiences div {
-      border: 1px solid #ddd;
-      padding: 16px;
-    }
-
-    #experiences img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      display: block;
-      margin-bottom: 12px;
-    }
-
-    @media (max-width: 600px) {
-      header,
-      main,
-      footer {
-        padding: 16px;
-      }
-
-      #experiences img {
-        height: 160px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div>
-      <h1>Discover South Africa</h1>
-      <nav>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Discover<span class="dot">.</span></div>
+      <nav class="site-nav">
         <a href="#about">About</a>
         <a href="#experiences">Experiences</a>
         <a href="#cities">Cities</a>
-        <a href="#plan">Plan Your Trip</a>
+        <a href="#plan">Plan</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>Adventure Awaits in South Africa</h2>
-      <p>From bush camping under star-filled skies to vibrant cities and coastal escapes.</p>
-      <a href="#plan">Get started planning your trip</a>
-    </section>
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Adventure Awaits in South Africa</h1>
+      <p class="hero-subhead">From bush camping under star-filled skies to vibrant cities and coastal escapes.</p>
+      <a href="#plan" class="btn btn-dark">Plan Your Trip</a>
+      <a href="#experiences" class="btn btn-outline">Explore More</a>
+    </div>
+  </section>
 
-    <section id="experiences">
-      <h2>Top Experiences</h2>
-      <div>
-        <img src="images/bush%20camping.jpg" alt="Bush camping tents under a starry sky">
-        <h3>Bush Camping</h3>
-        <p>Sleep close to nature in world-famous game reserves and hear the sounds of the wild.</p>
+  <section class="features" id="experiences">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature">
+          <div class="icon">&#9733;</div>
+          <img src="images/bush%20camping.jpg" alt="Bush camping tents under a starry sky" class="feature-img">
+          <h3>Bush Camping</h3>
+          <p>Sleep close to nature in world-famous game reserves and hear the sounds of the wild.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">&#9992;</div>
+          <img src="images/johannesburg.jpg" alt="Johannesburg city skyline and streets" class="feature-img">
+          <h3>Johannesburg</h3>
+          <p>Explore history, art, and culture in South Africa's energetic urban heart.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">&#9728;</div>
+          <img src="images/cape%20town.jpg" alt="Cape Town coastline with Table Mountain" class="feature-img">
+          <h3>Cape Town</h3>
+          <p>Ride the cable car, hike Table Mountain, and enjoy beaches with dramatic views.</p>
+        </div>
       </div>
-      <div>
-        <img src="images/johannesburg.jpg" alt="Johannesburg city skyline and streets">
-        <h3>Johannesburg</h3>
-        <p>Explore history, art, and culture in South Africa's energetic urban heart.</p>
-      </div>
-      <div>
-        <img src="images/cape%20town.jpg" alt="Cape Town coastline with Table Mountain">
-        <h3>Cape Town</h3>
-        <p>Ride the cable car, hike Table Mountain, and enjoy beaches with dramatic views.</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="cities">
-      <h2>Featured Content</h2>
-      <p>South Africa blends wildlife adventures with bold city life and scenic coastlines.</p>
-    </section>
-
-    <section>
-      <h2>More to Explore</h2>
-      <div>
-        <h3>Garden Route</h3>
-        <p>Drive the coastline and stop in charming towns, forests, and lagoons.</p>
+  <section class="featured" id="cities">
+    <div class="container">
+      <h2 class="section-title">Featured Content</h2>
+      <p class="section-lede">South Africa blends wildlife adventures with bold city life and scenic coastlines.</p>
+      <div class="media">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VzqWO5EaSps" title="South Africa 4K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border: none; display: block;"></iframe>
       </div>
-      <div>
-        <h3>Local Cuisine</h3>
-        <p>Try braai, biltong, and fresh seafood at markets and seaside cafés.</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="plan">
-      <h2>Heard enough?</h2>
+  <section class="secondary" id="about">
+    <div class="container">
+      <div class="secondary-grid">
+        <div class="card">
+          <div class="card-text">
+            <h3>Garden Route</h3>
+            <p>Drive the coastline and stop in charming towns, forests, and lagoons.</p>
+            <a href="https://www.southafrica.net/us/en/" class="btn btn-outline">Read More</a>
+          </div>
+          <div class="card-image img-a"></div>
+        </div>
+        <div class="card">
+          <div class="card-text">
+            <h3>Local Cuisine</h3>
+            <p>Try braai, biltong, and fresh seafood at markets and seaside caf&eacute;s.</p>
+            <a href="https://www.southafrica.net/us/en/" class="btn btn-outline">Read More</a>
+          </div>
+          <div class="card-image img-b"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="plan">
+    <div class="container cta-inner">
+      <h2>Heard Enough?</h2>
       <p>Start mapping out your South African itinerary today.</p>
-      <a href="https://www.southafrica.net/us/en/">Plan your adventure in South Africa</a>
-    </section>
-  </main>
+      <a href="https://www.southafrica.net/us/en/" class="btn btn-dark">Plan Your Adventure</a>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2026 Discover South Africa</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experiences">Experiences</a>
-      <a href="#plan">Plan</a>
-    </nav>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="brand">Discover<span class="dot">.</span></div>
+        <p>&copy; 2026 Discover South Africa. Built for LIS 351.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#experiences">Experiences</a>
+          <a href="#cities">Cities</a>
+          <a href="#about">About</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="#plan">Plan a Trip</a>
+          <a href="https://www.southafrica.net/us/en/">South Africa Tourism</a>
+        </div>
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
